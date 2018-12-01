@@ -1,0 +1,15 @@
+<h2> Show Pet Information</h2>
+
+  <label>
+  Pet Name:
+  <input type="text" (change)="upDateName($event.target.value)">
+  </label>
+<br><br>
+  <label>
+    Pet Image:
+    <input type="text" (change)="upDateImage($event.target.value)">
+  </label>
+<br>
+<h3>Pet Name {{petName}}</h3>
+<img [src]="petImage" style="max-width: 100%">
+
